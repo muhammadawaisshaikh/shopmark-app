@@ -1,3 +1,32 @@
-<div class="container">
-    <p>header works!</p>
+<div class="header py-3">
+    <div class="container text-center">
+        <div class="toggleContainer" (click)="toggleMenu()" [ngClass]="{'change': toggleButton}">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <h5>Shop Mark</h5>
+    </div>
 </div>
+
+<div class="sidebar side" [ngClass]="{'show': sidebar}">
+    <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+        
+        <div class="bottom-thing">
+            <a href="#">Download Updated Profile</a>
+        </div>
+    </ul>
+</div>
+
+<div class="fade-area"></div>
